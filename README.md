@@ -81,7 +81,7 @@ This is the main Flask application file.
 
 - **Functions**:
   - `compress_image()`: Manages image upload, compression, and rendering of results.
-  - `download_file(filename)`: Handles the download request for compressed images.
+  - `download_compressed_image(filename)`: Handles the download request for compressed images.
 
 ### `index.html`
 
