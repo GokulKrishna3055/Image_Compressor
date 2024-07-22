@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: azure;
+            background-color: #000000;
+        }
+        .main{
+            margin: 5%,20%,20%,20%;
+            padding:0px,20px,20px,20px;
+        }
+        label{
+            color: aquamarine;
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>The Image Compression Platform</h1>
+    <div class="main">
+    <form action="#" method="post" enctype="multipart/form-data">
+        <label for="img">Submit your image that need to be compressed:</label>
+        <input type="file" name="image" id="img" required><br>
+        <label for="cr">Enter the compression rate:</label>
+        <input type="number" name="cr" min="0" max="100" id="cr" required><br>
+        <input type="submit" value="SUBMIT"/>
+    </form>
+    </div>
+
+        {% block content%}
+        {% endblock %}
+
+</body>
+</html>
