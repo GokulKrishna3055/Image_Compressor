@@ -1,4 +1,4 @@
-Sure! Here’s the updated README file with the supported image types (extensions) added:
+
 
 ---
 
@@ -38,7 +38,7 @@ This project is a web-based platform for compressing images using Singular Value
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/yourusername/image_compressor.git
+   git clone https://github.com/GokulKrishna3055/image_compressor.git
    cd image_compressor
    ```
 
@@ -133,10 +133,8 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 For any questions or suggestions, please contact:
 
-- Name: Your Name
-- Email: yourname@example.com
-- GitHub: [yourusername](https://github.com/yourusername)
+- Name: Gokul Krishna N
+- Email: gk9621rf@gmail.com
+- GitHub: [GokulKrishna3055](https://github.com/GokulKrishna3055)
 
 ---
-
-Feel free to customize the README file according to your specific project details and requirements.
