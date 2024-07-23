@@ -1,4 +1,5 @@
-***Use My Website On render it will take some tiem for process***
+***Use My Website On render it will take some time for process***
+
 https://image-compressor-9.onrender.com
 
 Fell free to contact me if there is any isuue
