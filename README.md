@@ -2,7 +2,7 @@
 
 https://image-compressor-9.onrender.com
 
-Fell free to contact me if there is any isuue
+Feel free to contact me if there is any isuue
 
 ---
 
