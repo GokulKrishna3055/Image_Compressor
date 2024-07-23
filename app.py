@@ -36,13 +36,13 @@ def compress_image():
                 image_array = np.array(image1_gray)#getting the matrix of the image
                 U,lam,VT = np.linalg.svd(image_array)#performing Single Value Decomposition
                 if (compression_r>=10)and(compression_r<30):
-                    num_sva_keep = 150
+                    num_sva_keep = 1024
                 elif (compression_r>=30) and (compression_r<50):
-                    num_sva_keep = 128
+                    num_sva_keep = 256
                 elif (compression_r>=50) and (compression_r<80):
-                    num_sva_keep = 64
+                    num_sva_keep = 128
                 elif (compression_r>=80) and (compression_r<=100):
-                    num_sva_keep = 32 #calculating the number of lambda values needed using compression rate given
+                    num_sva_keep = 64 #calculating the number of lambda values needed using compression rate given
                 
                 com_img_array = np.dot(U[:,:num_sva_keep],np.dot(np.diag(lam[:num_sva_keep]),VT[:num_sva_keep,:]))#reconstructing the image 
                 comr_img = Image.fromarray(com_img_array.astype(np.uint8))#forming the image using reconstructed matrix
