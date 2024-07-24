@@ -35,7 +35,7 @@ def compress_image():
                 image1_gray = ImageOps.grayscale(resized_img)#converting to Grayscale
                 image_array = np.array(image1_gray)#getting the matrix of the image
                 U,lam,VT = np.linalg.svd(image_array)#performing Single Value Decomposition
-                num_sva_keep = int((len(lam)*compression_r)/100) #calculating the number of lambda values needed using compression rate given
+                num_sva_keep = int((len(lam)*(100-compression_r))/100) #calculating the number of lambda values needed using compression rate given
                 
                 com_img_array = np.dot(U[:,:num_sva_keep],np.dot(np.diag(lam[:num_sva_keep]),VT[:num_sva_keep,:]))#reconstructing the image 
                 comr_img = Image.fromarray(com_img_array.astype(np.uint8))#forming the image using reconstructed matrix
